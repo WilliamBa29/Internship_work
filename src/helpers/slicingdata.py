@@ -79,7 +79,7 @@ def week(rownumber: int, df_, arr):
     else:
         datet = datetime.date(int(f'20{data.iloc[i, 0][7:9]}'), arr[i], int(data.iloc[i, 0][0:2]))
 
-    if (datet.weekday() == 5 or datet.weekday() == 6):
+    if (datet.weekday() == 0 or datet.weekday() == 6):
         x[i] = 0
     else:
         x[i] = 1
